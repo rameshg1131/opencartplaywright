@@ -1,0 +1,88 @@
+No such element found locator.click: Target page, context or browser has been closed
+Call log:
+  - waiting for locator('button:has-text(\'Login\')').nth(1)
+
+    at C:\OpenCartAutomation\tests\Naukri.spec.ts:25:38 {
+  Symbol(step): {
+    location: {
+      file: 'C:\\OpenCartAutomation\\tests\\Naukri.spec.ts',
+      line: 25,
+      column: 38
+    },
+    category: 'pw:api',
+    title: "Click locator('button:has-text(\\'Login\\')').nth(1)",
+    apiName: 'locator.click',
+    params: {
+      selector: "button:has-text('Login') >> nth=1",
+      strict: true,
+      force: true,
+      timeout: 0
+    },
+    group: undefined,
+    stepId: 'pw:api@38',
+    boxedStack: undefined,
+    steps: [],
+    attachmentIndices: [],
+    info: TestStepInfoImpl {
+      annotations: [],
+      _testInfo: [TestInfoImpl],
+      _stepId: 'pw:api@38',
+      _title: "Click locator('button:has-text(\\'Login\\')').nth(1)",
+      _parentStep: undefined,
+      skip: [Function (anonymous)]
+    },
+    complete: [Function: complete],
+    endWallTime: 1779860702943,
+    error: {
+      message: 'Error: locator.click: Target page, context or browser has been closed\n' +
+        'Call log:\n' +
+        "\x1B[2m  - waiting for locator('button:has-text(\\'Login\\')').nth(1)\x1B[22m\n",
+      stack: 'Error: locator.click: Target page, context or browser has been closed\n' +
+        'Call log:\n' +
+        "\x1B[2m  - waiting for locator('button:has-text(\\'Login\\')').nth(1)\x1B[22m\n" +
+        '\n' +
+        '    at C:\\OpenCartAutomation\\tests\\Naukri.spec.ts:25:38',
+      cause: undefined
+    }
+  }
+}
+No such element found locator.click: Target page, context or browser has been closed
+    at C:\OpenCartAutomation\tests\Naukri.spec.ts:25:38 {
+  Symbol(step): {
+    location: {
+      file: 'C:\\OpenCartAutomation\\tests\\Naukri.spec.ts',
+      line: 25,
+      column: 38
+    },
+    category: 'pw:api',
+    title: "Click locator('button:has-text(\\'Login\\')').nth(1)",
+    apiName: 'locator.click',
+    params: {
+      selector: "button:has-text('Login') >> nth=1",
+      strict: true,
+      force: true,
+      timeout: 0
+    },
+    group: undefined,
+    stepId: 'pw:api@39',
+    boxedStack: undefined,
+    steps: [],
+    attachmentIndices: [],
+    info: TestStepInfoImpl {
+      annotations: [],
+      _testInfo: [TestInfoImpl],
+      _stepId: 'pw:api@39',
+      _title: "Click locator('button:has-text(\\'Login\\')').nth(1)",
+      _parentStep: undefined,
+      skip: [Function (anonymous)]
+    },
+    complete: [Function: complete],
+    endWallTime: 1779860702957,
+    error: {
+      message: 'Error: locator.click: Target page, context or browser has been closed',
+      stack: 'Error: locator.click: Target page, context or browser has been closed\n' +
+        '    at C:\\OpenCartAutomation\\tests\\Naukri.spec.ts:25:38',
+      cause: undefined
+    }
+  }
+}
