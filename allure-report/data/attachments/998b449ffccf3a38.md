@@ -1,0 +1,241 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: example1.spec.ts >> Dailogs test
+- Location: tests\example1.spec.ts:83:5
+
+# Error details
+
+```
+Test timeout of 30000ms exceeded.
+```
+
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e5]:
+      - link "image not displaying" [ref=e7] [cursor=pointer]:
+        - /url: http://www.automationtesting.in
+        - img "image not displaying" [ref=e8]
+      - heading "Automation Demo Site" [level=1] [ref=e10]
+    - navigation [ref=e11]:
+      - list [ref=e14]:
+        - listitem [ref=e15]:
+          - link "Home" [ref=e16] [cursor=pointer]:
+            - /url: Index.html
+        - listitem [ref=e17]:
+          - link "Register" [ref=e18] [cursor=pointer]:
+            - /url: Register.html
+        - listitem [ref=e19]:
+          - link "WebTable" [ref=e20] [cursor=pointer]:
+            - /url: WebTable.html
+        - listitem [ref=e21]:
+          - link "SwitchTo" [ref=e22] [cursor=pointer]:
+            - /url: SwitchTo.html
+          - generic [ref=e23]: 
+        - listitem [ref=e24]:
+          - link "Widgets" [ref=e25] [cursor=pointer]:
+            - /url: Widgets.html
+          - generic [ref=e26]: 
+        - listitem [ref=e27]:
+          - link "Interactions" [ref=e28] [cursor=pointer]:
+            - /url: Interactions.html
+          - generic [ref=e29]: 
+        - listitem [ref=e30]:
+          - link "Video" [ref=e31] [cursor=pointer]:
+            - /url: SwitchTo.html
+          - generic [ref=e32]: 
+        - listitem [ref=e33]:
+          - link "WYSIWYG" [ref=e34] [cursor=pointer]:
+            - /url: WYSIWYG.html
+          - generic [ref=e35]: 
+        - listitem [ref=e36]:
+          - link "More" [ref=e37] [cursor=pointer]:
+            - /url: "#"
+          - generic [ref=e38]: 
+        - listitem [ref=e39]:
+          - link "Practice Site" [ref=e40] [cursor=pointer]:
+            - /url: http://practice.automationtesting.in/
+  - generic [ref=e41]:
+    - generic [ref=e45]:
+      - list [ref=e48]:
+        - listitem [ref=e49]:
+          - link "Single Iframe" [ref=e50]:
+            - /url: "#Single"
+        - listitem [ref=e51]:
+          - link "Iframe with in an Iframe" [ref=e52] [cursor=pointer]:
+            - /url: "#Multiple"
+      - iframe [ref=e54]: <p>Your browser does not support iframes.</p>:
+        - generic [ref=f1e3]:
+          - heading "iFrame Demo" [level=5] [ref=f1e4]
+          - textbox [ref=f1e7]
+    - generic [ref=e56]:
+      - insertion [ref=e59]:
+        - generic [ref=e62]:
+          - heading "These are topics related to the article that might interest you" [level=2] [ref=e64]: Discover more
+          - link "Development Tools" [ref=e65] [cursor=pointer]:
+            - generic "Development Tools" [ref=e66]
+            - img [ref=e68]
+          - link "Web UI Testing" [ref=e70] [cursor=pointer]:
+            - generic "Web UI Testing" [ref=e71]
+            - img [ref=e73]
+          - link "Automation Testing Services" [ref=e75] [cursor=pointer]:
+            - generic "Automation Testing Services" [ref=e76]
+            - img [ref=e78]
+          - link "Automation Testing Training" [ref=e80] [cursor=pointer]:
+            - generic "Automation Testing Training" [ref=e81]
+            - img [ref=e83]
+          - link "Automation Software Solutions" [ref=e85] [cursor=pointer]:
+            - generic "Automation Software Solutions" [ref=e86]
+            - img [ref=e88]
+          - link "Software Testing Courses" [ref=e90] [cursor=pointer]:
+            - generic "Software Testing Courses" [ref=e91]
+            - img [ref=e93]
+          - link "Software" [ref=e95] [cursor=pointer]:
+            - generic "Software" [ref=e96]
+            - img [ref=e98]
+          - link "Web Testing Services" [ref=e100] [cursor=pointer]:
+            - generic "Web Testing Services" [ref=e101]
+            - img [ref=e103]
+      - insertion [ref=e107]:
+        - generic [ref=e110]:
+          - heading "These are topics related to the article that might interest you" [level=2] [ref=e112]: Discover more
+          - link "Automation Demo Access" [ref=e113] [cursor=pointer]:
+            - generic "Automation Demo Access" [ref=e114]
+            - img [ref=e116]
+          - link "Drag Drop Testing" [ref=e118] [cursor=pointer]:
+            - generic "Drag Drop Testing" [ref=e119]
+            - img [ref=e121]
+          - link "Automation Demo Site" [ref=e123] [cursor=pointer]:
+            - generic "Automation Demo Site" [ref=e124]
+            - img [ref=e126]
+          - link "SwitchTo Frame Handling" [ref=e128] [cursor=pointer]:
+            - generic "SwitchTo Frame Handling" [ref=e129]
+            - img [ref=e131]
+          - link "WYSIWYG Editor Testing" [ref=e133] [cursor=pointer]:
+            - generic "WYSIWYG Editor Testing" [ref=e134]
+            - img [ref=e136]
+          - link "Selenium Automation Tutorial" [ref=e138] [cursor=pointer]:
+            - generic "Selenium Automation Tutorial" [ref=e139]
+            - img [ref=e141]
+          - link "WebTest Training" [ref=e143] [cursor=pointer]:
+            - generic "WebTest Training" [ref=e144]
+            - img [ref=e146]
+          - link "Web Browsers" [ref=e148] [cursor=pointer]:
+            - generic "Web Browsers" [ref=e149]
+            - img [ref=e151]
+      - insertion [ref=e155]:
+        - generic [ref=e158]:
+          - heading "These are topics related to the article that might interest you" [level=2] [ref=e160]: Discover more
+          - link "Web Browsers" [ref=e161] [cursor=pointer]:
+            - generic "Web Browsers" [ref=e162]
+            - img [ref=e164]
+          - link "Test Automation Tools" [ref=e166] [cursor=pointer]:
+            - generic "Test Automation Tools" [ref=e167]
+            - img [ref=e169]
+          - link "Browser Support Testing" [ref=e171] [cursor=pointer]:
+            - generic "Browser Support Testing" [ref=e172]
+            - img [ref=e174]
+          - link "Selenium Testing Tools" [ref=e176] [cursor=pointer]:
+            - generic "Selenium Testing Tools" [ref=e177]
+            - img [ref=e179]
+          - link "Video Player Testing" [ref=e181] [cursor=pointer]:
+            - generic "Video Player Testing" [ref=e182]
+            - img [ref=e184]
+          - link "Web Testing Framework" [ref=e186] [cursor=pointer]:
+            - generic "Web Testing Framework" [ref=e187]
+            - img [ref=e189]
+          - link "Iframe Testing Guide" [ref=e191] [cursor=pointer]:
+            - generic "Iframe Testing Guide" [ref=e192]
+            - img [ref=e194]
+          - link "File Upload Testing" [ref=e196] [cursor=pointer]:
+            - generic "File Upload Testing" [ref=e197]
+            - img [ref=e199]
+      - insertion [ref=e203]:
+        - generic [ref=e206]:
+          - heading "These are topics related to the article that might interest you" [level=2] [ref=e208]: Discover more
+          - link "Software" [ref=e209] [cursor=pointer]:
+            - generic "Software" [ref=e210]
+            - img [ref=e212]
+          - link "Web UI Testing" [ref=e214] [cursor=pointer]:
+            - generic "Web UI Testing" [ref=e215]
+            - img [ref=e217]
+          - link "Automation Testing Training" [ref=e219] [cursor=pointer]:
+            - generic "Automation Testing Training" [ref=e220]
+            - img [ref=e222]
+          - link "Automation Testing Services" [ref=e224] [cursor=pointer]:
+            - generic "Automation Testing Services" [ref=e225]
+            - img [ref=e227]
+          - link "Test Automation Tools" [ref=e229] [cursor=pointer]:
+            - generic "Test Automation Tools" [ref=e230]
+            - img [ref=e232]
+          - link "Development Tools" [ref=e234] [cursor=pointer]:
+            - generic "Development Tools" [ref=e235]
+            - img [ref=e237]
+          - link "Automation Software Solutions" [ref=e239] [cursor=pointer]:
+            - generic "Automation Software Solutions" [ref=e240]
+            - img [ref=e242]
+          - link "Software Testing Courses" [ref=e244] [cursor=pointer]:
+            - generic "Software Testing Courses" [ref=e245]
+            - img [ref=e247]
+      - generic [ref=e252]:
+        - generic [ref=e253]:
+          - text: "\"@ 2016\""
+          - link "Automation Testing" [ref=e254] [cursor=pointer]:
+            - /url: "#"
+          - text: "\"All Rights Reserved.\""
+        - generic [ref=e255]:
+          - link "" [ref=e256] [cursor=pointer]:
+            - /url: https://www.facebook.com/automationtesting2016/
+            - generic [ref=e257]: 
+          - link "" [ref=e258] [cursor=pointer]:
+            - /url: https://twitter.com/krishnasakinala
+            - generic [ref=e259]: 
+          - link "" [ref=e260] [cursor=pointer]:
+            - /url: https://www.linkedin.com/nhome/?trk=hb_signin
+            - generic [ref=e261]: 
+          - link "" [ref=e262] [cursor=pointer]:
+            - /url: https://plus.google.com/105286300926085335367
+            - generic [ref=e263]: 
+          - link "" [ref=e264] [cursor=pointer]:
+            - /url: https://www.youtube.com/channel/UCmQRa3pWM9zsB474URz8ESg
+            - generic [ref=e265]: 
+  - insertion [ref=e266]:
+    - iframe [ref=e269]:
+      - generic [active] [ref=f14e1]:
+        - generic [ref=f14e5]:
+          - link [ref=f14e6] [cursor=pointer]:
+            - /url: https://adclick.g.doubleclick.net/aclk?sa=l&ai=CpMDir78kavDkJd_KssUPxqOU0Q_Qr6PLhwHX3rTs1xW2kB8QASCPvrcvYOXK5YO0DqABrZuPqCnIAQmpAuJETXRonkY-qAMByAPLBKoEqQJP0NPhL-fYmH2p2AA75J3Vi6F87giE7TuaaYk9CrsUh4AF2XLM8wYV9Zxd_mXQum8HnNMQk4Gmrt0Hs-xltEypkekYx8nWQpe3cy9jl8aRe0S3Fz0WMwmADMljmO0ua5xihtokfLPoSuop8qRW6MW5trkY4x9B6r2Cv5zmCWQ4r_d9N2uN5ZerRt4Sf-TcpgXZa9RCN2Kd0tje874xE2SqflVkiRSy40uVgD2VNzbGRu43VRttUMOU9pbvCA-uYU3WhJGhd-sN-wG3rEgwJxCovHuQsjDHlVGXlu4mLIaTEKLlvtl3w2nEazAg1PrPm_7Z16wJBMYUjDPHdAMmqMARw0lJ2b-W1ryRqsKDN4XDCoWkbvkh-jPXX2Vyoc3JYNeDxMzT-f_LMvjABPzE2NfgBYgFhKvNg1mgBi6AB63T34cEqAenzLECqAfi2LECqAemvhuoB8zOsQKoB_PRG6gHltgbqAeqm7ECqAeOzhuoB5PYG6gH8OAbqAfulrECqAf-nrECqAevvrECqAfVyRuoB9m2sQKoB5oGqAf_nrECqAffn7ECqAf4wrECqAf7wrEC2AcA0ggzCIBhEAEYnwMyCIqCgICAgIAIOg-AQIDAgICAgKiAAqiDgBBIvf3BOliW1JXv8_OUA2ABsQlcgSOadjtooIAKAZgLAcgLAYAMAaIMA5ABAaoNAklOyA0B6g0TCKH_le_z85QDFV-lrAIdxhEl-vANAogOCbgT5APYEwOIFAXQFQGYFgHKFgIKAPgWAYAXAbIXBBgBUAa6FwI4AbIYCRICu08YLiIBANAYAcIZAggB&ae=1&gclid=EAIaIQobChMIsPiV7_PzlAMVX6WsAh3GESX6EAEYASAAEgJPefD_BwE&num=1&cid=CAQShwIAEQoqgbN62n-1rF_GX_UPD1jPR3PBxiCGg3Fw1iEUdnepZJzaHqCbMN_36XttjCCj68QdU206-AlpmCpa2kiqio3k72_rW4K0uQR6TZm6f53LIcqK5toGVu9oVzVQy8v2kUj5SnVq0itXOgwbmnVHh6dgIWF5xhWLc0CJb9JrxBLeEOaf_pZLlG8clCeHjYqFHAAmjeI8VFF6nqkKs8OKUzoXRaC0STsEqEW1Ia2C2NbcoWKxqeDCg8BLR3LVIvW0n0x2W4B5UfbG73X_o05AXa9Tao33wAXE-cciWZrHEcXDOwS2ugZQRQHn6TQyyp-pQu5VLZ8u8J-Z7IM32uv9QhANbstx7BgB&sig=AOD64_3VGmxiRzzmGL3Fm3sTsfgsJi0aoA&client=ca-pub-9173866185064071&rf=1&nb=9&adurl=https://www.khazanajewellery.com/storelocator%3Futm_source%3Dgoogle%26utm_medium%3Ddisplay%26utm_campaign%3Dog_mela_display%26gad_source%3D5%26gad_campaignid%3D23898314116%26gclid%3DEAIaIQobChMIsPiV7_PzlAMVX6WsAh3GESX6EAEYASAAEgJPefD_BwE
+            - img [ref=f14e7]
+          - generic [ref=f14e8]:
+            - link "OG Exchange Mela Is Here!" [ref=f14e11] [cursor=pointer]:
+              - /url: https://adclick.g.doubleclick.net/aclk?sa=l&ai=CpMDir78kavDkJd_KssUPxqOU0Q_Qr6PLhwHX3rTs1xW2kB8QASCPvrcvYOXK5YO0DqABrZuPqCnIAQmpAuJETXRonkY-qAMByAPLBKoEqQJP0NPhL-fYmH2p2AA75J3Vi6F87giE7TuaaYk9CrsUh4AF2XLM8wYV9Zxd_mXQum8HnNMQk4Gmrt0Hs-xltEypkekYx8nWQpe3cy9jl8aRe0S3Fz0WMwmADMljmO0ua5xihtokfLPoSuop8qRW6MW5trkY4x9B6r2Cv5zmCWQ4r_d9N2uN5ZerRt4Sf-TcpgXZa9RCN2Kd0tje874xE2SqflVkiRSy40uVgD2VNzbGRu43VRttUMOU9pbvCA-uYU3WhJGhd-sN-wG3rEgwJxCovHuQsjDHlVGXlu4mLIaTEKLlvtl3w2nEazAg1PrPm_7Z16wJBMYUjDPHdAMmqMARw0lJ2b-W1ryRqsKDN4XDCoWkbvkh-jPXX2Vyoc3JYNeDxMzT-f_LMvjABPzE2NfgBYgFhKvNg1mgBi6AB63T34cEqAenzLECqAfi2LECqAemvhuoB8zOsQKoB_PRG6gHltgbqAeqm7ECqAeOzhuoB5PYG6gH8OAbqAfulrECqAf-nrECqAevvrECqAfVyRuoB9m2sQKoB5oGqAf_nrECqAffn7ECqAf4wrECqAf7wrEC2AcA0ggzCIBhEAEYnwMyCIqCgICAgIAIOg-AQIDAgICAgKiAAqiDgBBIvf3BOliW1JXv8_OUA2ABsQlcgSOadjtooIAKAZgLAcgLAYAMAaIMA5ABAaoNAklOyA0B6g0TCKH_le_z85QDFV-lrAIdxhEl-vANAogOCbgT5APYEwOIFAXQFQGYFgHKFgIKAPgWAYAXAbIXBBgBUAa6FwI4AbIYCRICu08YLiIBANAYAcIZAggB&ae=1&gclid=EAIaIQobChMIsPiV7_PzlAMVX6WsAh3GESX6EAEYASAAEgJPefD_BwE&num=1&cid=CAQShwIAEQoqgbN62n-1rF_GX_UPD1jPR3PBxiCGg3Fw1iEUdnepZJzaHqCbMN_36XttjCCj68QdU206-AlpmCpa2kiqio3k72_rW4K0uQR6TZm6f53LIcqK5toGVu9oVzVQy8v2kUj5SnVq0itXOgwbmnVHh6dgIWF5xhWLc0CJb9JrxBLeEOaf_pZLlG8clCeHjYqFHAAmjeI8VFF6nqkKs8OKUzoXRaC0STsEqEW1Ia2C2NbcoWKxqeDCg8BLR3LVIvW0n0x2W4B5UfbG73X_o05AXa9Tao33wAXE-cciWZrHEcXDOwS2ugZQRQHn6TQyyp-pQu5VLZ8u8J-Z7IM32uv9QhANbstx7BgB&sig=AOD64_3VGmxiRzzmGL3Fm3sTsfgsJi0aoA&client=ca-pub-9173866185064071&rf=1&nb=0&adurl=https://www.khazanajewellery.com/storelocator%3Futm_source%3Dgoogle%26utm_medium%3Ddisplay%26utm_campaign%3Dog_mela_display%26gad_source%3D5%26gad_campaignid%3D23898314116%26gclid%3DEAIaIQobChMIsPiV7_PzlAMVX6WsAh3GESX6EAEYASAAEgJPefD_BwE
+              - text: OG Exchange Mela Is
+              - text: Here!
+            - link "Khazana Jewellery" [ref=f14e13] [cursor=pointer]:
+              - /url: https://adclick.g.doubleclick.net/aclk?sa=l&ai=CpMDir78kavDkJd_KssUPxqOU0Q_Qr6PLhwHX3rTs1xW2kB8QASCPvrcvYOXK5YO0DqABrZuPqCnIAQmpAuJETXRonkY-qAMByAPLBKoEqQJP0NPhL-fYmH2p2AA75J3Vi6F87giE7TuaaYk9CrsUh4AF2XLM8wYV9Zxd_mXQum8HnNMQk4Gmrt0Hs-xltEypkekYx8nWQpe3cy9jl8aRe0S3Fz0WMwmADMljmO0ua5xihtokfLPoSuop8qRW6MW5trkY4x9B6r2Cv5zmCWQ4r_d9N2uN5ZerRt4Sf-TcpgXZa9RCN2Kd0tje874xE2SqflVkiRSy40uVgD2VNzbGRu43VRttUMOU9pbvCA-uYU3WhJGhd-sN-wG3rEgwJxCovHuQsjDHlVGXlu4mLIaTEKLlvtl3w2nEazAg1PrPm_7Z16wJBMYUjDPHdAMmqMARw0lJ2b-W1ryRqsKDN4XDCoWkbvkh-jPXX2Vyoc3JYNeDxMzT-f_LMvjABPzE2NfgBYgFhKvNg1mgBi6AB63T34cEqAenzLECqAfi2LECqAemvhuoB8zOsQKoB_PRG6gHltgbqAeqm7ECqAeOzhuoB5PYG6gH8OAbqAfulrECqAf-nrECqAevvrECqAfVyRuoB9m2sQKoB5oGqAf_nrECqAffn7ECqAf4wrECqAf7wrEC2AcA0ggzCIBhEAEYnwMyCIqCgICAgIAIOg-AQIDAgICAgKiAAqiDgBBIvf3BOliW1JXv8_OUA2ABsQlcgSOadjtooIAKAZgLAcgLAYAMAaIMA5ABAaoNAklOyA0B6g0TCKH_le_z85QDFV-lrAIdxhEl-vANAogOCbgT5APYEwOIFAXQFQGYFgHKFgIKAPgWAYAXAbIXBBgBUAa6FwI4AbIYCRICu08YLiIBANAYAcIZAggB&ae=1&gclid=EAIaIQobChMIsPiV7_PzlAMVX6WsAh3GESX6EAEYASAAEgJPefD_BwE&num=1&cid=CAQShwIAEQoqgbN62n-1rF_GX_UPD1jPR3PBxiCGg3Fw1iEUdnepZJzaHqCbMN_36XttjCCj68QdU206-AlpmCpa2kiqio3k72_rW4K0uQR6TZm6f53LIcqK5toGVu9oVzVQy8v2kUj5SnVq0itXOgwbmnVHh6dgIWF5xhWLc0CJb9JrxBLeEOaf_pZLlG8clCeHjYqFHAAmjeI8VFF6nqkKs8OKUzoXRaC0STsEqEW1Ia2C2NbcoWKxqeDCg8BLR3LVIvW0n0x2W4B5UfbG73X_o05AXa9Tao33wAXE-cciWZrHEcXDOwS2ugZQRQHn6TQyyp-pQu5VLZ8u8J-Z7IM32uv9QhANbstx7BgB&sig=AOD64_3VGmxiRzzmGL3Fm3sTsfgsJi0aoA&client=ca-pub-9173866185064071&rf=1&nb=1&adurl=https://www.khazanajewellery.com/storelocator%3Futm_source%3Dgoogle%26utm_medium%3Ddisplay%26utm_campaign%3Dog_mela_display%26gad_source%3D5%26gad_campaignid%3D23898314116%26gclid%3DEAIaIQobChMIsPiV7_PzlAMVX6WsAh3GESX6EAEYASAAEgJPefD_BwE
+          - link "Bring old treasures home as brand new happiness." [ref=f14e16] [cursor=pointer]:
+            - /url: https://adclick.g.doubleclick.net/aclk?sa=l&ai=CpMDir78kavDkJd_KssUPxqOU0Q_Qr6PLhwHX3rTs1xW2kB8QASCPvrcvYOXK5YO0DqABrZuPqCnIAQmpAuJETXRonkY-qAMByAPLBKoEqQJP0NPhL-fYmH2p2AA75J3Vi6F87giE7TuaaYk9CrsUh4AF2XLM8wYV9Zxd_mXQum8HnNMQk4Gmrt0Hs-xltEypkekYx8nWQpe3cy9jl8aRe0S3Fz0WMwmADMljmO0ua5xihtokfLPoSuop8qRW6MW5trkY4x9B6r2Cv5zmCWQ4r_d9N2uN5ZerRt4Sf-TcpgXZa9RCN2Kd0tje874xE2SqflVkiRSy40uVgD2VNzbGRu43VRttUMOU9pbvCA-uYU3WhJGhd-sN-wG3rEgwJxCovHuQsjDHlVGXlu4mLIaTEKLlvtl3w2nEazAg1PrPm_7Z16wJBMYUjDPHdAMmqMARw0lJ2b-W1ryRqsKDN4XDCoWkbvkh-jPXX2Vyoc3JYNeDxMzT-f_LMvjABPzE2NfgBYgFhKvNg1mgBi6AB63T34cEqAenzLECqAfi2LECqAemvhuoB8zOsQKoB_PRG6gHltgbqAeqm7ECqAeOzhuoB5PYG6gH8OAbqAfulrECqAf-nrECqAevvrECqAfVyRuoB9m2sQKoB5oGqAf_nrECqAffn7ECqAf4wrECqAf7wrEC2AcA0ggzCIBhEAEYnwMyCIqCgICAgIAIOg-AQIDAgICAgKiAAqiDgBBIvf3BOliW1JXv8_OUA2ABsQlcgSOadjtooIAKAZgLAcgLAYAMAaIMA5ABAaoNAklOyA0B6g0TCKH_le_z85QDFV-lrAIdxhEl-vANAogOCbgT5APYEwOIFAXQFQGYFgHKFgIKAPgWAYAXAbIXBBgBUAa6FwI4AbIYCRICu08YLiIBANAYAcIZAggB&ae=1&gclid=EAIaIQobChMIsPiV7_PzlAMVX6WsAh3GESX6EAEYASAAEgJPefD_BwE&num=1&cid=CAQShwIAEQoqgbN62n-1rF_GX_UPD1jPR3PBxiCGg3Fw1iEUdnepZJzaHqCbMN_36XttjCCj68QdU206-AlpmCpa2kiqio3k72_rW4K0uQR6TZm6f53LIcqK5toGVu9oVzVQy8v2kUj5SnVq0itXOgwbmnVHh6dgIWF5xhWLc0CJb9JrxBLeEOaf_pZLlG8clCeHjYqFHAAmjeI8VFF6nqkKs8OKUzoXRaC0STsEqEW1Ia2C2NbcoWKxqeDCg8BLR3LVIvW0n0x2W4B5UfbG73X_o05AXa9Tao33wAXE-cciWZrHEcXDOwS2ugZQRQHn6TQyyp-pQu5VLZ8u8J-Z7IM32uv9QhANbstx7BgB&sig=AOD64_3VGmxiRzzmGL3Fm3sTsfgsJi0aoA&client=ca-pub-9173866185064071&rf=1&nb=7&adurl=https://www.khazanajewellery.com/storelocator%3Futm_source%3Dgoogle%26utm_medium%3Ddisplay%26utm_campaign%3Dog_mela_display%26gad_source%3D5%26gad_campaignid%3D23898314116%26gclid%3DEAIaIQobChMIsPiV7_PzlAMVX6WsAh3GESX6EAEYASAAEgJPefD_BwE
+            - text: Bring old treasures
+            - text: home as brand
+            - text: new happiness.
+          - link "Learn More" [ref=f14e18] [cursor=pointer]:
+            - /url: https://adclick.g.doubleclick.net/aclk?sa=l&ai=CpMDir78kavDkJd_KssUPxqOU0Q_Qr6PLhwHX3rTs1xW2kB8QASCPvrcvYOXK5YO0DqABrZuPqCnIAQmpAuJETXRonkY-qAMByAPLBKoEqQJP0NPhL-fYmH2p2AA75J3Vi6F87giE7TuaaYk9CrsUh4AF2XLM8wYV9Zxd_mXQum8HnNMQk4Gmrt0Hs-xltEypkekYx8nWQpe3cy9jl8aRe0S3Fz0WMwmADMljmO0ua5xihtokfLPoSuop8qRW6MW5trkY4x9B6r2Cv5zmCWQ4r_d9N2uN5ZerRt4Sf-TcpgXZa9RCN2Kd0tje874xE2SqflVkiRSy40uVgD2VNzbGRu43VRttUMOU9pbvCA-uYU3WhJGhd-sN-wG3rEgwJxCovHuQsjDHlVGXlu4mLIaTEKLlvtl3w2nEazAg1PrPm_7Z16wJBMYUjDPHdAMmqMARw0lJ2b-W1ryRqsKDN4XDCoWkbvkh-jPXX2Vyoc3JYNeDxMzT-f_LMvjABPzE2NfgBYgFhKvNg1mgBi6AB63T34cEqAenzLECqAfi2LECqAemvhuoB8zOsQKoB_PRG6gHltgbqAeqm7ECqAeOzhuoB5PYG6gH8OAbqAfulrECqAf-nrECqAevvrECqAfVyRuoB9m2sQKoB5oGqAf_nrECqAffn7ECqAf4wrECqAf7wrEC2AcA0ggzCIBhEAEYnwMyCIqCgICAgIAIOg-AQIDAgICAgKiAAqiDgBBIvf3BOliW1JXv8_OUA2ABsQlcgSOadjtooIAKAZgLAcgLAYAMAaIMA5ABAaoNAklOyA0B6g0TCKH_le_z85QDFV-lrAIdxhEl-vANAogOCbgT5APYEwOIFAXQFQGYFgHKFgIKAPgWAYAXAbIXBBgBUAa6FwI4AbIYCRICu08YLiIBANAYAcIZAggB&ae=1&gclid=EAIaIQobChMIsPiV7_PzlAMVX6WsAh3GESX6EAEYASAAEgJPefD_BwE&num=1&cid=CAQShwIAEQoqgbN62n-1rF_GX_UPD1jPR3PBxiCGg3Fw1iEUdnepZJzaHqCbMN_36XttjCCj68QdU206-AlpmCpa2kiqio3k72_rW4K0uQR6TZm6f53LIcqK5toGVu9oVzVQy8v2kUj5SnVq0itXOgwbmnVHh6dgIWF5xhWLc0CJb9JrxBLeEOaf_pZLlG8clCeHjYqFHAAmjeI8VFF6nqkKs8OKUzoXRaC0STsEqEW1Ia2C2NbcoWKxqeDCg8BLR3LVIvW0n0x2W4B5UfbG73X_o05AXa9Tao33wAXE-cciWZrHEcXDOwS2ugZQRQHn6TQyyp-pQu5VLZ8u8J-Z7IM32uv9QhANbstx7BgB&sig=AOD64_3VGmxiRzzmGL3Fm3sTsfgsJi0aoA&client=ca-pub-9173866185064071&rf=1&nb=8&adurl=https://www.khazanajewellery.com/storelocator%3Futm_source%3Dgoogle%26utm_medium%3Ddisplay%26utm_campaign%3Dog_mela_display%26gad_source%3D5%26gad_campaignid%3D23898314116%26gclid%3DEAIaIQobChMIsPiV7_PzlAMVX6WsAh3GESX6EAEYASAAEgJPefD_BwE
+            - generic [ref=f14e20]: Learn More
+        - img [ref=f14e25] [cursor=pointer]
+        - button [ref=f14e27] [cursor=pointer]:
+          - img [ref=f14e28]
+        - iframe
+  - generic [ref=e270]:
+    - generic [ref=e271] [cursor=pointer]:
+      - img [ref=e273]
+      - link "Go to shopping options for Development Tools" [ref=e275]: Development Tools
+    - button "Close shopping anchor" [ref=e276]
+```

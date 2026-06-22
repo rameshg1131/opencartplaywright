@@ -39,7 +39,7 @@ test.afterEach(async ({ page }) => {
 });
 
 
-test('User login test @master @sanity @regression',async()=>{
+test('User login test @master @sanity @regression',async({page})=>{
 
     //Navigate to Login page via Home page
 
@@ -50,6 +50,7 @@ test('User login test @master @sanity @regression',async()=>{
     await loginPage.setEmail(config.email);
     await loginPage.setPassword(config.password);
     await loginPage.clickLogin();
+    await page.waitForTimeout(3000)
 
     //alternatevly
     //await loginPage.login(config.email,config.password);

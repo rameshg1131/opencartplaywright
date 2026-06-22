@@ -1,0 +1,752 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: Naukri1.spec.ts >> Login to App
+- Location: tests\Naukri1.spec.ts:9:5
+
+# Error details
+
+```
+Test timeout of 30000ms exceeded.
+```
+
+# Page snapshot
+
+```yaml
+- generic [ref=e1]:
+  - generic [ref=e5]:
+    - link "Naukri Logo" [ref=e6] [cursor=pointer]:
+      - /url: https://www.naukri.com
+      - img "Naukri Logo" [ref=e7]
+    - navigation:
+      - list [ref=e8]:
+        - listitem [ref=e9]:
+          - link "Jobs 2" [ref=e10] [cursor=pointer]:
+            - /url: /mnjuser/recommendedjobs
+            - generic [ref=e11]: Jobs
+            - generic [ref=e12]: "2"
+          - generic:
+            - list:
+              - listitem:
+                - link "Recommended jobs":
+                  - /url: /mnjuser/recommendedjobs
+                  - generic:
+                    - generic:
+                      - generic: Recommended jobs
+              - listitem:
+                - link "NVites 1 New":
+                  - /url: /mnjuser/inbox
+                  - generic:
+                    - generic:
+                      - generic: NVites
+                  - generic "1 New"
+              - listitem:
+                - link "Application status 16 Updates":
+                  - /url: /myapply/historypage
+                  - generic:
+                    - generic:
+                      - generic: Application status
+                  - generic "16 Updates"
+              - listitem:
+                - link "Saved jobs":
+                  - /url: /mnjuser/savedjobs
+                  - generic:
+                    - generic:
+                      - generic: Saved jobs
+        - listitem [ref=e13]:
+          - link "Companies" [ref=e14] [cursor=pointer]:
+            - /url: https://www.naukri.com/companies-hiring-in-india?src=gnbCompanies_homepage_srch
+            - generic [ref=e15]: Companies
+          - generic:
+            - list:
+              - listitem:
+                - generic: Explore categories
+              - listitem:
+                - link "Unicorn":
+                  - /url: https://www.naukri.com/unicorn-companies-in-india-cat102?title=Unicorns%20actively%20hiring&src=gnbCompanies_homepage_srch
+                  - generic:
+                    - generic:
+                      - generic: Unicorn
+              - listitem:
+                - link "MNC":
+                  - /url: https://www.naukri.com/mnc-companies-in-india-cat101?title=MNCs%20actively%20hiring&src=gnbCompanies_homepage_srch
+                  - generic:
+                    - generic:
+                      - generic: MNC
+              - listitem:
+                - link "Startup":
+                  - /url: https://www.naukri.com/startup-companies-in-india-cat103?title=Startups%20actively%20hiring&src=gnbCompanies_homepage_srch
+                  - generic:
+                    - generic:
+                      - generic: Startup
+              - listitem:
+                - link "Product based":
+                  - /url: https://www.naukri.com/product-companies-in-india-cat106?title=Product%20companies%20actively%20hiring&src=gnbCompanies_homepage_srch
+                  - generic:
+                    - generic:
+                      - generic: Product based
+              - listitem:
+                - link "Internet":
+                  - /url: https://www.naukri.com/internet-companies-in-india-cat105?title=Internet%20companies%20actively%20hiring&src=gnbCompanies_homepage_srch
+                  - generic:
+                    - generic:
+                      - generic: Internet
+            - list:
+              - listitem:
+                - generic: Explore collections
+              - listitem:
+                - link "Top companies":
+                  - /url: https://www.naukri.com/companies-hiring-in-india?src=gnbCompanies_homepage_srch
+                  - generic:
+                    - generic:
+                      - generic: Top companies
+              - listitem:
+                - link "IT companies":
+                  - /url: https://www.naukri.com/it-companies-in-india-cat116?src=gnbCompanies_homepage_srch&title=IT%20Companies%20Hiring
+                  - generic:
+                    - generic:
+                      - generic: IT companies
+              - listitem:
+                - link "Fintech companies":
+                  - /url: https://www.naukri.com/fintech-and-payments-companies-in-india-cat108?title=Fintech%20%26%20Payments%20companies%20actively%20hiring&src=gnbCompanies_homepage_srch
+                  - generic:
+                    - generic:
+                      - generic: Fintech companies
+              - listitem:
+                - link "Sponsored companies":
+                  - /url: https://www.naukri.com/allcompanies?searchType=standardLogo&title=Sponsored+companies&branding=%257B%2522pagename%2522%253A%2522ni-desktop-standard-viewAll%2522%257D&pageNo=1&qcount=47&src=gnbCompanies_homepage_srch
+                  - generic:
+                    - generic:
+                      - generic: Sponsored companies
+              - listitem:
+                - link "Featured companies":
+                  - /url: https://www.naukri.com/allcompanies?searchType=premiumLogo&title=Featured+companies+actively+hiring&branding=%257B%2522pagename%2522%253A%2522ni-desktop-premium-viewAll%2522%257D&pageNo=1&qcount=47&src=gnbCompanies_homepage_srch
+                  - generic:
+                    - generic:
+                      - generic: Featured companies
+            - list:
+              - listitem:
+                - generic:
+                  - text: Research companies
+                  - generic: by
+                  - img
+                  - generic: Ambitionbox
+              - listitem:
+                - link "Interview questions":
+                  - /url: https://www.ambitionbox.com/interviews?utm_source=naukri&utm_medium=desktop&utm_campaign=gnb
+                  - generic:
+                    - generic:
+                      - generic: Interview questions
+              - listitem:
+                - link "Company salaries":
+                  - /url: https://www.ambitionbox.com/salaries?utm_source=naukri&utm_medium=desktop&utm_campaign=gnb
+                  - generic:
+                    - generic:
+                      - generic: Company salaries
+              - listitem:
+                - link "Company reviews":
+                  - /url: https://www.ambitionbox.com/reviews?utm_source=naukri&utm_medium=desktop&utm_campaign=gnb
+                  - generic:
+                    - generic:
+                      - generic: Company reviews
+              - listitem:
+                - link "Salary Calculator":
+                  - /url: https://www.ambitionbox.com/salaries/take-home-salary-calculator?utm_campaign=gnb&utm_source=naukri&utm_medium=desktop
+                  - generic:
+                    - generic:
+                      - generic: Salary Calculator
+        - listitem [ref=e16]:
+          - link "Services 1" [ref=e17] [cursor=pointer]:
+            - /url: https://resume.naukri.com/?fftid=100001
+            - generic [ref=e18]: Services
+            - generic [ref=e19]: "1"
+          - generic:
+            - list:
+              - listitem:
+                - generic: Resume writing
+              - listitem:
+                - link "Text resume":
+                  - /url: https://resume.naukri.com/resume-writing-services?fftid=101001
+                  - generic:
+                    - generic:
+                      - generic: Text resume
+              - listitem:
+                - link "Visual resume":
+                  - /url: https://resume.naukri.com/visual-resume-writing-services?fftid=101002
+                  - generic:
+                    - generic:
+                      - generic: Visual resume
+              - listitem:
+                - link "Resume critique":
+                  - /url: https://resume.naukri.com/resume-critique?fftid=101006
+                  - generic:
+                    - generic:
+                      - generic: Resume critique
+              - listitem:
+                - generic: Find Jobs
+              - listitem:
+                - link "Jobs4u":
+                  - /url: https://resume.naukri.com/job-alerts-on-mobile-mail?fftid=101011#jobmail
+                  - generic:
+                    - generic:
+                      - generic: Jobs4u
+              - listitem:
+                - link "Priority applicant":
+                  - /url: https://resume.naukri.com/priority-job-application?fftid=101019
+                  - generic:
+                    - generic:
+                      - generic: Priority applicant
+              - listitem:
+                - link "Contact us":
+                  - /url: https://resume.naukri.com/contact-us?fftid=101015
+                  - generic:
+                    - generic:
+                      - generic: Contact us
+            - list:
+              - listitem:
+                - generic: Get recruiter's attention
+              - listitem:
+                - link "Resume display":
+                  - /url: https://resume.naukri.com/resume-display?fftid=101009
+                  - generic:
+                    - generic:
+                      - generic: Resume display
+              - listitem:
+                - generic: Monthly subscriptions
+              - listitem:
+                - link "Basic & premium plans":
+                  - /url: https://resume.naukri.com/subscription-product?fftid=101025
+                  - generic:
+                    - generic:
+                      - generic: Basic & premium plans
+            - list:
+              - listitem:
+                - generic: Free resume resources
+              - listitem:
+                - link "Resume maker":
+                  - /url: https://www.naukri.com/resume-maker?utmTerm=ResumePro_Gnb&utmContent=gnbServices
+                  - generic:
+                    - generic:
+                      - generic: Resume maker
+              - listitem:
+                - link "Resume quality score":
+                  - /url: https://resume.naukri.com/resume-quality-score?fftid=101003
+                  - generic:
+                    - generic:
+                      - generic: Resume quality score
+              - listitem:
+                - link "Resume samples":
+                  - /url: https://resume.naukri.com/resume-samples?fftid=101004
+                  - generic:
+                    - generic:
+                      - generic: Resume samples
+              - listitem:
+                - link "Job letter samples":
+                  - /url: https://resume.naukri.com/job-letter-format
+                  - generic:
+                    - generic:
+                      - generic: Job letter samples
+              - listitem:
+                - generic: Promotional Offer
+              - listitem:
+                - link "FASTJOB20 20% off on services to help get more callbacks":
+                  - /url: https://resume.naukri.com/resume-display?fftid=notf_nauk_promo_rd
+                  - generic:
+                    - generic:
+                      - generic: FASTJOB20 20% off on services to help get more callbacks
+    - generic [ref=e20] [cursor=pointer]:
+      - generic:
+        - generic:
+          - generic:
+            - generic:
+              - generic:
+                - textbox "Enter keyword / designation / companies"
+        - generic:
+          - generic:
+            - generic:
+              - textbox "Select experience"
+              - generic: 
+        - generic:
+          - generic:
+            - generic:
+              - generic:
+                - textbox "Enter location"
+      - generic [ref=e21]: Search jobs here
+      - button "" [ref=e22]:
+        - generic [ref=e23]: 
+    - generic [ref=e24]:
+      - link "naukri360-pill naukri360-pill naukri360-pill naukri360-pill naukri360-pill naukri360-pill" [ref=e25] [cursor=pointer]:
+        - /url: /naukri360
+        - generic [ref=e26]:
+          - img "naukri360-pill" [ref=e28]
+          - img "naukri360-pill" [ref=e30]
+          - img "naukri360-pill" [ref=e32]
+          - img "naukri360-pill" [ref=e34]
+          - img "naukri360-pill" [ref=e36]
+          - img "naukri360-pill" [ref=e38]
+      - generic:
+        - list:
+          - listitem:
+            - link "Neo-AI Job Agent ":
+              - /url: https://www.naukri.com/job-apply-agent?utmTerm=JobAgent_gnb&utmContent=gnbV1
+              - generic:
+                - generic:
+                  - generic: Neo-AI Job Agent
+                - generic: 
+          - listitem:
+            - link "Naukri Pro ":
+              - /url: https://www.naukri.com/naukri360-pro?utm_term=N360Pro_gnb&utm_content=gnbV1
+              - generic:
+                - generic:
+                  - generic: Naukri Pro
+                - generic: 
+          - listitem:
+            - link "Resume Pro ":
+              - /url: https://www.naukri.com/resume-maker?utm_term=ResumePro_gnb&utm_content=gnbV1
+              - generic:
+                - generic:
+                  - generic: Resume Pro
+                - generic: 
+          - listitem:
+            - link "Resume Writing Service ":
+              - /url: https://www.naukri.com/resume-writing-service?utmTerm=resume_gnb&utmContent=gnbV1
+              - generic:
+                - generic:
+                  - generic: Resume Writing Service
+                - generic: 
+          - listitem:
+            - link "Interview Pro ":
+              - /url: https://www.naukri.com/mock-interview-questions?skipRole=true&utmTerm=InterviewPro_gnb&utmContent=gnbV1
+              - generic:
+                - generic:
+                  - generic: Interview Pro
+                - generic: 
+    - img "jobagent-pill" [ref=e41] [cursor=pointer]
+    - generic [ref=e43] [cursor=pointer]:
+      - generic [ref=e44]: 
+      - generic [ref=e45]: "10"
+    - generic [ref=e52] [cursor=pointer]:
+      - img "naukri user profile img" [ref=e53]
+      - generic [ref=e54]: "2"
+  - generic [ref=e60]:
+    - generic [ref=e63]:
+      - generic [ref=e66]:
+        - generic [ref=e68]:
+          - generic [ref=e69] [cursor=pointer]:
+            - img [ref=e71]
+            - generic [ref=e74]:
+              - img [ref=e75]
+              - generic [ref=e76]: 90%
+          - generic [ref=e77]:
+            - generic [ref=e79]:
+              - generic [ref=e80]:
+                - generic [ref=e81]: Ramesh Poola
+                - emphasis [ref=e82] [cursor=pointer]: editOneTheme
+              - generic [ref=e85]: Profile last updated - Today
+            - generic [ref=e86]:
+              - generic [ref=e87]:
+                - generic [ref=e89]:
+                  - emphasis [ref=e90]: locationOt
+                  - generic "Bengaluru, INDIA" [ref=e91]
+                - generic [ref=e93]:
+                  - emphasis [ref=e94]: experienceOneTheme
+                  - generic "8 Year(s) 9 Month(s)" [ref=e96]:
+                    - generic [ref=e97]: 8 Years
+                    - generic [ref=e98]: 9 Months
+                - generic [ref=e100]:
+                  - generic [ref=e101]:
+                    - emphasis [ref=e102]: walletOneTheme
+                    - generic "₹ Seventeen lakh fifty thousand" [ref=e103]:
+                      - generic [ref=e104]: ₹
+                      - text: 17,50,000
+                  - generic [ref=e105] [cursor=pointer]: Add breakup
+              - generic [ref=e106]:
+                - generic [ref=e108]:
+                  - generic [ref=e109]:
+                    - emphasis [ref=e110]: phoneOneTheme
+                    - generic "9538546795" [ref=e111]
+                  - emphasis [ref=e113]: verifiedOneTheme
+                - generic [ref=e115]:
+                  - generic [ref=e116]:
+                    - emphasis [ref=e117]: mailOneTheme
+                    - generic "poolaramesh539@gmail.com" [ref=e118]
+                  - emphasis [ref=e121]: verifiedOneTheme
+                - generic [ref=e123]:
+                  - emphasis [ref=e124]: calenderOneTheme
+                  - generic "Available to join in 15 Days or less" [ref=e125]
+        - generic [ref=e127] [cursor=pointer]:
+          - generic [ref=e129]:
+            - emphasis [ref=e131]: CvOneTheme
+            - generic [ref=e132]: Add resume
+            - generic [ref=e133]: ↑ 10%
+          - link "Add 1 missing details" [ref=e136]:
+            - /url: javascript:void(0)
+      - generic [ref=e137]:
+        - list [ref=e141]:
+          - listitem [ref=e142]: Quick links
+          - listitem [ref=e143]:
+            - text: Resume
+            - link "Upload" [ref=e144] [cursor=pointer]:
+              - /url: javascript:;
+          - listitem [ref=e145]: Resume headline
+          - listitem [ref=e146]: Key skills
+          - listitem [ref=e147]: Employment
+          - listitem [ref=e148]:
+            - text: Education
+            - link "Add" [ref=e149] [cursor=pointer]:
+              - /url: javascript:;
+          - listitem [ref=e150]: IT skills
+          - listitem [ref=e151]:
+            - text: Projects
+            - link "Add" [ref=e152] [cursor=pointer]:
+              - /url: javascript:;
+          - listitem [ref=e153]: Profile summary
+          - listitem [ref=e154]: Accomplishments
+          - listitem [ref=e155]: Career profile
+          - listitem [ref=e156]: Personal details
+        - generic [ref=e157]:
+          - generic [ref=e164] [cursor=pointer]:
+            - generic [ref=e165]:
+              - img "NaukriPro" [ref=e167]
+              - generic [ref=e168]:
+                - generic [ref=e169]: Power up with
+                - heading "keyword insights" [level=1] [ref=e172]
+            - generic [ref=e173]:
+              - button "Become a Pro":
+                - generic: Become a Pro
+              - generic [ref=e175]: 25% off
+          - generic [ref=e177]:
+            - generic [ref=e178]:
+              - generic [ref=e180]: ResumeAdd 10%
+              - generic [ref=e182]: 70% of recruiters discover candidates through their resume
+            - generic [ref=e185]:
+              - generic [ref=e191]:
+                - img [ref=e194]
+                - generic [ref=e195]:
+                  - generic [ref=e196]:
+                    - generic [ref=e198]: We’ve built a resume based on your profile
+                    - generic [ref=e199]: You can further improve its content with the help of AI
+                  - generic [ref=e201] [cursor=pointer]: View resume
+              - generic [ref=e203]:
+                - generic [ref=e204]:
+                  - generic [ref=e206]:
+                    - button "Choose File" [ref=e207] [cursor=pointer]
+                    - generic [ref=e209] [cursor=pointer]: Already have a resume? Upload resume
+                  - list
+                - generic [ref=e210]: "Supported Formats: doc, docx, rtf, pdf, upto 2 MB"
+          - generic [ref=e213]:
+            - generic [ref=e214]:
+              - text: Resume headline
+              - generic [ref=e215] [cursor=pointer]: editOneTheme
+            - generic [ref=e218]: “Senior QA Engineer with 8+ Years in Web/Mobile Testing, API Automation & Agile Delivery” - Immediate Joiner
+          - generic [ref=e221]:
+            - generic [ref=e222]:
+              - text: Key skills
+              - generic [ref=e223] [cursor=pointer]: editOneTheme
+            - generic [ref=e225]:
+              - generic "Manual Testing" [ref=e226]
+              - generic "Mobile Application Testing" [ref=e227]
+              - generic "Web Application Testing" [ref=e228]
+              - generic "API Testing" [ref=e229]
+              - generic "Performance Testing" [ref=e230]
+              - generic "Memory Leakage Testing" [ref=e231]
+              - generic "Mobile Testing" [ref=e232]
+              - generic "Device Testing" [ref=e233]
+              - generic "Bluetooth" [ref=e234]
+              - generic "NFC" [ref=e235]
+              - generic "Android Testing" [ref=e236]
+              - generic "Ios Testing" [ref=e237]
+              - generic "Charles Proxy" [ref=e238]
+              - generic "Azure DevOps" [ref=e239]
+              - generic "JIRA" [ref=e240]
+              - generic "Servicenow" [ref=e241]
+          - generic [ref=e245]:
+            - generic [ref=e246]:
+              - text: Employment
+              - generic [ref=e247]: Add employment
+            - generic [ref=e248]:
+              - generic [ref=e249]:
+                - generic [ref=e250]:
+                  - generic "IT QA Test Analyst" [ref=e251]
+                  - generic [ref=e252] [cursor=pointer]: editOneTheme
+                - generic "Ecolab Global Services" [ref=e254]
+                - generic [ref=e255]:
+                  - generic [ref=e256]: Full-time
+                  - generic [ref=e258]: Feb 2022 to Mar 2026 (4 years 2 months)
+                - generic [ref=e261]:
+                  - text: Expertise in manual software testing, following the Shift?Left Testing strategy Responsible for analyzing business requirements, identifying test scenarios, authoring, and executing test cases within sprint timelines while adhering to QA policies, processes, and documentation standar...
+                  - link "Read More" [ref=e262] [cursor=pointer]:
+                    - /url: javascript:;
+              - generic [ref=e263]:
+                - generic [ref=e264]:
+                  - generic "Functional Test Engineer" [ref=e265]
+                  - generic [ref=e266] [cursor=pointer]: editOneTheme
+                - generic "Photon Interactive Pvt Ltd" [ref=e268]
+                - generic [ref=e269]:
+                  - generic [ref=e270]: Full-time
+                  - generic [ref=e272]: Nov 2020 to Dec 2021 (1 year 2 months)
+                - generic [ref=e275]:
+                  - text: Involved in the complete testing lifecycle, including analysis, scenario design, test planning, test case creation, and execution Played an integral role in the successful deployment of projects by actively participating in production deployment cycles Performed testing across multi...
+                  - link "Read More" [ref=e276] [cursor=pointer]:
+                    - /url: javascript:;
+              - generic [ref=e277]:
+                - generic [ref=e278]:
+                  - generic "Quality Engineer" [ref=e279]
+                  - generic [ref=e280] [cursor=pointer]: editOneTheme
+                - generic "CAMSDATA" [ref=e282]
+                - generic [ref=e283]:
+                  - generic [ref=e284]: Full-time
+                  - generic [ref=e286]: Jan 2020 to Apr 2020 (4 months)
+                - generic [ref=e289]:
+                  - text: Executed test cases as part of an e?commerce project Participated in stakeholder engagement, planning, and execution within an Agile environment Delivered projects while ensuring SLA compliance and effective team coordination Identified risks and optimized test and release cycles a...
+                  - link "Read More" [ref=e290] [cursor=pointer]:
+                    - /url: javascript:;
+              - generic [ref=e291]:
+                - generic [ref=e292]:
+                  - generic "QA Analyst" [ref=e293]
+                  - generic [ref=e294] [cursor=pointer]: editOneTheme
+                - generic "ZuciTech Software Solutions" [ref=e296]
+                - generic [ref=e297]:
+                  - generic [ref=e298]: Full-time
+                  - generic [ref=e300]: Oct 2019 to Jan 2020 (4 months)
+                - generic [ref=e302]: Handled web and mobile application projects on an OTT platform Interfaced with product owners and the onshore Agile team to ensure timely sprint delivery Collaborated with team members to execute tests and perform defect triaging
+              - generic [ref=e303]:
+                - generic [ref=e304]:
+                  - generic "Test Engineer" [ref=e305]
+                  - generic [ref=e306] [cursor=pointer]: editOneTheme
+                - generic "Sunfra Software Services" [ref=e308]
+                - generic [ref=e309]:
+                  - generic [ref=e310]: Full-time
+                  - generic [ref=e312]: May 2016 to Aug 2019 (3 years 4 months)
+                - generic [ref=e315]:
+                  - text: Handled web and mobile application projects in the e?commerce domain Involved in test execution and defect reporting Performed testing across multiple languages in both mobile and web applications Participated in bug battles to identify defects across projects through exploratory t...
+                  - link "Read More" [ref=e316] [cursor=pointer]:
+                    - /url: javascript:;
+          - generic [ref=e320]:
+            - generic [ref=e321]:
+              - text: Education
+              - generic [ref=e322]: Add education
+            - generic [ref=e323]:
+              - generic [ref=e324]:
+                - generic [ref=e325]:
+                  - generic [ref=e326]:
+                    - generic "B.Tech / B.E." [ref=e327]
+                    - generic "Computer Science and Engineering (CSE)" [ref=e328]
+                    - generic [ref=e329] [cursor=pointer]: editOneTheme
+                  - generic [ref=e330]: siddharth institute of engineering and technology, Chittoor
+                  - generic [ref=e331]:
+                    - text: 2009-2014
+                    - generic [ref=e332]: Full Time
+                - generic [ref=e334]:
+                  - generic:
+                    - generic [ref=e335]:
+                      - generic [ref=e336]: Class XII
+                      - generic [ref=e337] [cursor=pointer]: editOneTheme
+                    - generic [ref=e338]: Other
+                    - generic [ref=e339]: "2010"
+                - generic [ref=e340]:
+                  - generic:
+                    - generic [ref=e341]:
+                      - generic [ref=e342]: Class X
+                      - generic [ref=e343] [cursor=pointer]: editOneTheme
+                    - generic [ref=e344]: Other
+                    - generic [ref=e345]: "2008"
+              - generic [ref=e346] [cursor=pointer]: Add doctorate/PhD
+              - generic [ref=e347] [cursor=pointer]: Add masters/post-graduation
+          - generic [ref=e351]:
+            - generic [ref=e352]:
+              - text: IT skills
+              - generic [ref=e353]: Add details
+            - list [ref=e356]:
+              - listitem [ref=e357]:
+                - generic [ref=e358]: Skills
+                - generic [ref=e359]: Version
+                - generic [ref=e360]: Last used
+                - generic [ref=e361]: Experience
+              - listitem [ref=e363]:
+                - generic [ref=e364]: JIRA
+                - generic [ref=e365]: "-"
+                - generic [ref=e366]: "-"
+                - generic [ref=e367]: 4 Years 0 Month
+                - generic [ref=e368] [cursor=pointer]: editOneTheme
+              - listitem [ref=e369]:
+                - generic [ref=e370]: Azure DevOps
+                - generic [ref=e371]: "-"
+                - generic [ref=e372]: "-"
+                - generic [ref=e373]: 4 Years 3 Months
+                - generic [ref=e374] [cursor=pointer]: editOneTheme
+              - listitem [ref=e375]:
+                - generic [ref=e376]: Memory Leakage Testing
+                - generic [ref=e377]: "-"
+                - generic [ref=e378]: "-"
+                - generic [ref=e379]: 1 Year 0 Month
+                - generic [ref=e380] [cursor=pointer]: editOneTheme
+              - listitem [ref=e381]:
+                - generic [ref=e382]: Load / Performance Testing
+                - generic [ref=e383]: "-"
+                - generic [ref=e384]: "-"
+                - generic [ref=e385]: 2 Years 0 Month
+                - generic [ref=e386] [cursor=pointer]: editOneTheme
+              - listitem [ref=e387]:
+                - generic [ref=e388]: API Testing
+                - generic [ref=e389]: "-"
+                - generic [ref=e390]: "-"
+                - generic [ref=e391]: 3 Years 6 Months
+                - generic [ref=e392] [cursor=pointer]: editOneTheme
+              - listitem [ref=e393]:
+                - generic [ref=e394]: Mobile Application Testing
+                - generic [ref=e395]: "-"
+                - generic [ref=e396]: "-"
+                - generic [ref=e397]: 8 Years 9 Months
+                - generic [ref=e398] [cursor=pointer]: editOneTheme
+              - listitem [ref=e399]:
+                - generic [ref=e400]: Web Application Testing
+                - generic [ref=e401]: "-"
+                - generic [ref=e402]: "-"
+                - generic [ref=e403]: 8 Years 9 Months
+                - generic [ref=e404] [cursor=pointer]: editOneTheme
+              - listitem [ref=e405]:
+                - generic [ref=e406]: Manual Testing
+                - generic [ref=e407]: "-"
+                - generic [ref=e408]: "-"
+                - generic [ref=e409]: 8 Years 9 Months
+                - generic [ref=e410] [cursor=pointer]: editOneTheme
+          - generic [ref=e421]:
+            - generic [ref=e422]: New
+            - generic [ref=e423]:
+              - heading "Diversity & inclusion" [level=1] [ref=e425]
+              - img [ref=e428] [cursor=pointer]
+            - heading "Share details to attract recruiters who value people from different backgrounds" [level=3] [ref=e430]
+            - heading "Disability status" [level=4] [ref=e432]
+            - heading "Do not have disability" [level=3] [ref=e434]
+            - generic [ref=e436] [cursor=pointer]: Add military experience
+            - generic [ref=e438] [cursor=pointer]: Add career break
+    - text: ;
+  - contentinfo [ref=e441]:
+    - generic [ref=e444]:
+      - generic [ref=e445]:
+        - link "Naukri Logo" [ref=e446] [cursor=pointer]:
+          - /url: https://www.naukri.com
+          - img "Naukri Logo" [ref=e447]
+        - generic [ref=e448]:
+          - generic "Connect with us" [ref=e449]
+          - link "naukri social icons" [ref=e450] [cursor=pointer]:
+            - /url: https://www.facebook.com/Naukri
+            - img "naukri social icons" [ref=e451]
+          - link "naukri social icons" [ref=e452] [cursor=pointer]:
+            - /url: https://instagram.com/naukridotcom/
+            - img "naukri social icons" [ref=e453]
+          - link "naukri social icons" [ref=e454] [cursor=pointer]:
+            - /url: https://twitter.com/naukri
+            - img "naukri social icons" [ref=e455]
+          - link "naukri social icons" [ref=e456] [cursor=pointer]:
+            - /url: http://www.linkedin.com/company/naukri.com
+            - img "naukri social icons" [ref=e457]
+      - list [ref=e459]:
+        - listitem [ref=e460]:
+          - link "About us" [ref=e461] [cursor=pointer]:
+            - /url: https://infoedge.in
+        - listitem [ref=e462]:
+          - link "Careers" [ref=e463] [cursor=pointer]:
+            - /url: https://careers.infoedge.com/
+        - listitem [ref=e464]:
+          - link "Employer home" [ref=e465] [cursor=pointer]:
+            - /url: https://www.naukri.com/recruit/login
+        - listitem [ref=e466]:
+          - link "Sitemap" [ref=e467] [cursor=pointer]:
+            - /url: https://www.naukri.com/sitemap/sitemap.php
+        - listitem [ref=e468]:
+          - link "Credits" [ref=e469] [cursor=pointer]:
+            - /url: https://www.naukri.com/credits
+      - list [ref=e471]:
+        - listitem [ref=e472]:
+          - link "Help center" [ref=e473] [cursor=pointer]:
+            - /url: https://www.naukri.com/faq/job-seeker?utm_source=footer
+        - listitem [ref=e474]:
+          - link "Summons/Notices" [ref=e475] [cursor=pointer]:
+            - /url: https://w5.naukri.com/summons-notices-form/
+        - listitem [ref=e476]:
+          - link "Grievances" [ref=e477] [cursor=pointer]:
+            - /url: https://w5.naukri.com/grievances-form/
+        - listitem [ref=e478]:
+          - link "Report issue" [ref=e479] [cursor=pointer]:
+            - /url: https://w5.naukri.com/fdbck/main/feedback.php?app_id=15
+      - list [ref=e481]:
+        - listitem [ref=e482]:
+          - link "Privacy policy" [ref=e483] [cursor=pointer]:
+            - /url: https://www.naukri.com/privacypolicy
+        - listitem [ref=e484]:
+          - link "Terms & conditions" [ref=e485] [cursor=pointer]:
+            - /url: https://www.naukri.com/termsconditions
+        - listitem [ref=e486]:
+          - link "Fraud alert" [ref=e487] [cursor=pointer]:
+            - /url: https://www.naukri.com/imposter/report-fake-job-recruiter
+        - listitem [ref=e488]:
+          - link "Trust & safety" [ref=e489] [cursor=pointer]:
+            - /url: https://www.naukri.com/jobsearch/trust-safety
+      - generic [ref=e490]:
+        - generic [ref=e491]: Apply on the go
+        - generic [ref=e492]: Get real-time job updates on our App
+        - generic [ref=e493]:
+          - link "naukri app download" [ref=e494] [cursor=pointer]:
+            - /url: https://play.google.com/store/apps/details?id=naukriApp.appModules.login&hl=en&utm_source=naukri&utm_medium=footer
+            - img "naukri app download" [ref=e495]
+          - link "naukri app download" [ref=e496] [cursor=pointer]:
+            - /url: https://itunes.apple.com/in/app/naukri.com-job-search/id482877505?mt=8
+            - img "naukri app download" [ref=e497]
+    - generic [ref=e499]:
+      - generic [ref=e500]:
+        - link "naukri social logos" [ref=e502] [cursor=pointer]:
+          - /url: http://infoedge.in
+          - img "naukri social logos" [ref=e503]
+        - generic [ref=e504]:
+          - generic [ref=e505]: All trademarks are the property of their respective owners
+          - generic [ref=e506]: All rights reserved © 2026 Info Edge (India) Ltd.
+      - generic [ref=e507]: Our businesses
+      - list [ref=e510]:
+        - listitem [ref=e511]:
+          - link "nnacres" [ref=e513] [cursor=pointer]:
+            - /url: https://www.99acres.com/
+            - img "nnacres" [ref=e514]
+        - listitem [ref=e515]:
+          - link "jeevansathi" [ref=e517] [cursor=pointer]:
+            - /url: https://www.jeevansathi.com/
+            - img "jeevansathi" [ref=e518]
+        - listitem [ref=e519]:
+          - link "ng" [ref=e521] [cursor=pointer]:
+            - /url: https://www.naukrigulf.com/
+            - img "ng" [ref=e522]
+        - listitem [ref=e523]:
+          - link "shiksha" [ref=e525] [cursor=pointer]:
+            - /url: https://www.shiksha.com/
+            - img "shiksha" [ref=e526]
+        - listitem [ref=e527]:
+          - link "iimjobs" [ref=e529] [cursor=pointer]:
+            - /url: https://www.iimjobs.com
+            - img "iimjobs" [ref=e530]
+        - listitem [ref=e531]:
+          - link "hirist" [ref=e533] [cursor=pointer]:
+            - /url: https://www.hirist.tech/
+            - img "hirist" [ref=e534]
+        - listitem [ref=e535]:
+          - link "jobhai" [ref=e537] [cursor=pointer]:
+            - /url: https://www.jobhai.com
+            - img "jobhai" [ref=e538]
+        - listitem [ref=e539]:
+          - link "doselect" [ref=e541] [cursor=pointer]:
+            - /url: https://doselect.com/
+            - img "doselect" [ref=e542]
+        - listitem [ref=e543]:
+          - link "minis" [ref=e545] [cursor=pointer]:
+            - /url: https://www.naukri.com/minis
+            - img "minis" [ref=e546]
+        - listitem [ref=e547]:
+          - link "codingninjas" [ref=e549] [cursor=pointer]:
+            - /url: https://www.codingninjas.com/?utm_source=naukri&utm_medium=desktop-footer
+            - img "codingninjas" [ref=e550]
+```

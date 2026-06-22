@@ -1,1 +1,1 @@
-[{"data":{}}]
+[{"buildOrder":7,"reportUrl":"http://localhost:8080/job/opencart-local/7/allure","reportName":"AllureReport","data":{"Product defects":2,"Test defects":2}},{"buildOrder":6,"reportUrl":"http://localhost:8080/job/opencart-local/6/allure","reportName":"AllureReport","data":{"Product defects":2,"Test defects":3}},{"buildOrder":5,"reportUrl":"http://localhost:8080/job/opencart-local/5/allure","reportName":"AllureReport","data":{"Product defects":2,"Test defects":3}}]
